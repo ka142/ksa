@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html class="no-scroll" lang="en"><head dir="ltr">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+      <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+      <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+      <link rel="dns-prefetch" href="https://ding.wix.com/">
+    
+    
+<script>
+  try {
+    if (window.parent) {
+      var msgSent = false;
+      var vars = window.location.search.replace('?', '').split('&');
+      for (var i = 0; i < vars.length; i++) {
+        var arr = vars[i].split('=');
+        if (arr[0] == 'compId') {
+          window.parent.postMessage('{"intent":"TPA2","callId":1,"type":"appIsAlive","compId":"' + arr[1] + '","deviceType":"desktop","data":{"version":"1.66.0"}}', '*')
+          msgSent = true;
+        }
+      }
+      if (!msgSent) {
+        console.info('couldn\'t find compId in', window.location);
+      }
+    }
+  } catch (e) {
+    console.error('Error posting keep alive msg', e);
+  }
+</script>
+
+
+
+  
+    <script>
+      window.wixTpaWindowResize = {
+        elSelector: '#content-wrapper',
+        disableOnMobile: false,
+        enableViewportFix: false
+      };
+    </script>
+  
+  <script>!function(){"use strict";!function(e){var n=e.wixTpaWindowResize;if(n){if(!n.elSelector)return console.error("Aborting window resize handler: you must specify a css selector");var i,t=decodeURIComponent(e.location.search).split("&").reduce(function(e,n){var i=n.split("=");return e[i[0]]=i[1],e},{}),o=320,r=n.elSelector,a=n.interval||160,s=n.minHeight||null,c=n.disableOnMobile||!1,l=n.enableViewportFix||!1,d="mobile"===t.deviceType,u=["editor","preview"].indexOf(t.viewMode)>-1,h=n.onInit||function(){},f=!1!==n.listenOnInit,v=!0===n.log;d&&c||(f&&g(),h({startListening:g,stopListening:m}))}function p(e){v&&console.log("window-resize-handler ",e)}function w(n){var i=n.scrollHeight*(d&&l?o/(u?o:function(){var n=!1;if(void 0!==e.orientation)n=90===e.orientation||-90===e.orientation;else{var i=e.matchMedia("(orientation: landscape)");n=!(!i||!0!==i.matches)}return n}()?Math.max(e.screen.width,e.screen.height):e.screen.width):1);return s?Math.max(i,s):i}function g(){var n=0;i=e.setInterval(function(){var i=e.document.querySelector(r);if(i){var t=w(i);n===t&&e.innerHeight===t||(n=t,function(n){e.Wix?(p("window.Wix.setHeight"),e.Wix.setHeight(n)):(p("window.parent.postMessage"),e.parent.postMessage('{"intent":"TPA2","callId":1,"type":"heightChanged","compId":"'+e.name+'","deviceType":"desktop","data":{"version":"1.66.0", "args":{"height":"'+n+'", "overflow":"false"}}}',"*"))}(t))}},a)}function m(){e.clearInterval(i)}}(window)}();
+</script>
+
+
+    
+
+
+  
+
+    
+  
+  <meta data-react-helmet="true" property="og:type" content="website">
+  
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://www.wix.com/favicon.ico">
+
+
+
+
+  <script type="text/javascript">
+(function () {
+    var appName = 'communities-blog-app';
+    window.fedops = window.fedops || {};
+    window.fedops.apps = window.fedops.apps || {};
+    window.fedops.apps[appName] = { startLoadTime: window.performance && window.performance.now && window.performance.now() };
+    try { window.fedops.sessionId = window.localStorage.getItem('fedops.logger.sessionId'); } catch(e) {};
+    window.fedops.sessionId = window.fedops.sessionId || 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) { var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8); return v.toString(16); });
+    (new Image()).src = '//frog.wix.com/fed?appName=' + appName + '&src=72&evid=14&session_id=' + window.fedops.sessionId + '&_=' + Math.random();
+})();
+</script>
+
+
+
+    
+      
+        <link rel="stylesheet" type="text/css" href="dispatcher_data/languages.css">
+<link rel="stylesheet" type="text/css" href="a_data/main.css">
+<link rel="stylesheet" type="text/css" href="a_data/blog.css">
+<link rel="stylesheet" type="text/css" href="a_data/slick.css">
+<link rel="stylesheet" type="text/css" href="a_data/vendor-app.css">
+<link rel="stylesheet" type="text/css" href="a_data/common-app.css">
+<link rel="stylesheet" type="text/css" href="a_data/app.css">
+      
+      
+
+<style wix-style="">
+.blog-primary-color { color: #80ADDC; }
+	.blog-primary-color { color: #80ADDC; }
+	.blog-primary-background-color { background-color: #80ADDC; }
+	.blog-primary-background-color { background-color: #80ADDC; }
+	.blog-primary-border-color { border-color: #80ADDC; }
+	.blog-primary-border-color { border-color: #80ADDC; }
+	.blog-primary-border-bottom-color { border-bottom-color: #80ADDC; }
+	.blog-primary-border-bottom-color { border-bottom-color: #80ADDC; }
+	.blog-primary-border-left-color { border-left-color: #80ADDC; }
+	.blog-primary-border-left-color { border-left-color: #80ADDC; }
+	.blog-primary-fill { fill: #80ADDC; }
+	.blog-primary-fill { fill: #80ADDC; }
+.blog-secondary-fill { fill: #10B395; }
+	.blog-secondary-fill { fill: #10B395; }
+.blog-header-border-color { border-color: #FFFFFF; }
+	.blog-header-border-color { border-color: #FFFFFF; }
+.blog-border-color { border-color: #053C32; }
+	.blog-border-color { border-color: #053C32; }
+
+.blog-disabled-border-color {
+  border-color: #f0f0f0;
+}
+
+.blog-disabled-background-color {
+  border-color: #f0f0f0;
+}
+
+/* Header styles */
+.blog-navigation-container-color { color: #FFFFFF; }
+	.blog-navigation-container-color { color: rgba(255,255,255,1); }
+	.blog-navigation-container-fill { fill: #FFFFFF; }
+	.blog-navigation-container-fill { fill: rgba(255,255,255,1); }
+.blog-navigation-container-active-color { color: #80ADDC; }
+	.blog-navigation-container-active-color { color: #80ADDC; }
+	.blog-navigation-container-active-fill { fill: #80ADDC; }
+	.blog-navigation-container-active-fill { fill: #80ADDC; }
+.blog-navigation-container-separator-background-color { background-color: #FFFFFF; }
+	.blog-navigation-container-separator-background-color { background-color: rgba(255,255,255,1); }
+.blog-navigation-container-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif; font-size: 14px; line-height: normal; }
+	.blog-navigation-container-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif; line-height: normal; }
+.blog-desktop-header-background-color { background-color: #414141; }
+	.blog-desktop-header-background-color { background-color: #414141; } /*TODO: remove with header-widget experiment*/
+.blog-navigation-container-background-color { background-color: #414141; }
+	.blog-navigation-container-background-color { background-color: rgba(65,65,65,1); }
+.blog-header-background-color { background-color: #414141; }
+	.blog-header-background-color { background-color: rgba(65,65,65,1); }
+.blog-header-widget-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif;  line-height: normal; }
+	.blog-header-widget-font { style.header-font line-height: normal; }
+.blog-header-widget-text-color { color: #FFFFFF; }
+	.blog-header-widget-text-color { color: rgba(255,255,255,1); }
+.blog-header-notification-bubble-background-color { background-color: #10B395; }
+	.blog-header-notification-bubble-background-color { background-color: rgba(16,179,149,1); }
+.blog-header-notification-bubble-text-color { color: #414141; }
+	.blog-header-notification-bubble-text-color { color: rgba(65,65,65,1); }
+.blog-header-widget-icon-fill { fill: #FFFFFF; }
+	.blog-header-widget-icon-fill { fill: rgba(255,255,255,1); }
+.blog-desktop-header-search-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif;  line-height: normal; }
+	.blog-desktop-header-search-font { style.header-font line-height: normal; }
+.blog-desktop-header-search-text-color { color: #FFFFFF; }
+	.blog-desktop-header-search-text-color { color: rgba(255,255,255,1); }
+.blog-desktop-header-search-icon-fill { fill: #FFFFFF; }
+	.blog-desktop-header-search-icon-fill { fill: rgba(255,255,255,1); }
+.blog-desktop-header-search-border-background-color { background-color: #FFFFFF; }
+	.blog-desktop-header-search-border-background-color { background-color: rgba(255,255,255,1); }
+.blog-page-description-title-font { font:normal normal normal 38px/1.4em opensanshebrewcondensed-regular,sans-serif; font-size: 32px; line-height: normal; }
+	.blog-page-description-title-font { style.header-categoryTitleFont line-height: normal; }
+.blog-page-description-content-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif; font-size: 16px; line-height: normal; }
+	.blog-page-description-content-font { style.header-categoryDescriptionFont line-height: normal; }
+.blog-page-description-title-header300-font { font:normal normal normal 38px/1.4em opensanshebrewcondensed-regular,sans-serif; font-size: 40px; line-height: 1.2; }
+	.blog-page-description-title-header300-font { style.header-homepageTitleFont line-height: 1.2; }
+.blog-page-description-content-header300-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif; font-size: 18px; line-height: 1.5; }
+	.blog-page-description-content-header300-font { style.header-homepageDescriptionFont line-height: 1.5; }
+
+/* Post styles */
+.blog-text-color { color: #FFFFFF; }
+	.blog-text-color { color: #FFFFFF; }
+	.blog-text-border-color { border-color: #FFFFFF; }
+	.blog-text-border-color { border-color: #FFFFFF; }
+	.blog-text-background-color { background-color: #FFFFFF; }
+	.blog-text-background-color { background-color: #FFFFFF; }
+.blog-text-after-background-color::after { background-color: #FFFFFF; }
+	.blog-text-after-background-color::after { background-color: #FFFFFF; }
+.blog-separator-background-color { background-color: #FFFFFF; }
+	.blog-separator-background-color { background-color: #FFFFFF; }
+.blog-icon-fill { fill: #FFFFFF; }
+	.blog-icon-fill { fill: #FFFFFF; }
+	.blog-icon-stroke { stroke: #FFFFFF; }
+	.blog-icon-stroke { stroke: #FFFFFF; }
+.blog-background-color { background-color: #414141; }
+	.blog-background-color { background-color: rgba(65,65,65,1); }
+.blog-card-background-color { background-color: #414141; }
+	.blog-card-background-color { background-color: #414141; }
+	.blog-card-fill { fill: #414141; }
+	.blog-card-fill { fill: #414141; }
+	.blog-card-stroke { stroke: #414141; }
+	.blog-card-stroke { stroke: #414141; }
+	.blog-card-color { color: #414141; }
+	.blog-card-color { color: #414141; }
+.blog-inverted-separator-background-color { background-color: #414141; }
+	.blog-inverted-separator-background-color { background-color: #414141; }
+.blog-profile-photo-border-color { border-color: #414141; }
+	.blog-profile-photo-border-color { border-color: #414141; }
+.blog-card-border-color { border-color: #A7A7A6; }
+	.blog-card-border-color { border-color: #A7A7A6; }
+	.blog-card-border-bottom-color { border-bottom-color: #A7A7A6; }
+	.blog-card-border-bottom-color { border-bottom-color: #A7A7A6; }
+
+.blog-post-title-font { font:normal normal normal 38px/1.4em opensanshebrewcondensed-regular,sans-serif; font-size: 26px; line-height: normal; }
+	.blog-post-title-font { style.post-titleFont line-height: normal; }
+.blog-post-title-color { color: #FFFFFF; }
+	.blog-post-title-color { color: #FFFFFF; }
+.blog-post-description-style-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif; font-size: 16px; line-height: normal; }
+	.blog-post-description-style-font { style.post-descriptionFont line-height: normal; }
+.blog-post-description-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif; font-size: 16px; line-height: normal; }
+	.blog-post-description-font { style.post-descriptionFont line-height: normal; }
+	.blog-post-description-font { font-style: inherit; font-weight: inherit; text-decoration: inherit; }
+.blog-post-page-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif; font-size: 18px; line-height: normal; }
+	.blog-post-page-font { style.post-pageFont line-height: normal; }
+	.blog-post-page-font { font-style: inherit; font-weight: inherit; text-decoration: inherit; }
+
+/* Feed styles from design page */
+.blog-post-homepage-title-font { font:normal normal normal 38px/1.4em opensanshebrewcondensed-regular,sans-serif; font-size: 28px; line-height: normal; }
+	.blog-post-homepage-title-font { font:normal normal normal 26px/32px "open sans",sans-serif; line-height: normal; }
+.blog-post-homepage-description-style-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif; font-size: 16px; line-height: normal; }
+	.blog-post-homepage-description-style-font { font:normal normal normal 16px/20px "open sans",sans-serif; line-height: normal; }
+.blog-post-homepage-description-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif; font-size: 16px; line-height: normal; }
+	.blog-post-homepage-description-font { font:normal normal normal 16px/20px "open sans",sans-serif; line-height: normal; }
+	.blog-post-homepage-description-font { font-style: inherit; font-weight: inherit; text-decoration: inherit; }
+.blog-post-homepage-title-color { color: #FFFFFF; }
+	.blog-post-homepage-title-color { color: rgba(255,255,255,1); }
+.blog-post-homepage-TOI-title-color { color: #414141; }
+	.blog-post-homepage-TOI-title-color { color: rgba(65,65,65,1); }
+.blog-post-homepage-description-color { color: #FFFFFF; }
+	.blog-post-homepage-description-color { color: rgba(255,255,255,1); }
+	.blog-post-homepage-description-fill { fill: #FFFFFF; }
+	.blog-post-homepage-description-fill { fill: rgba(255,255,255,1); }
+	.blog-post-homepage-description-background-color { background-color: #FFFFFF; }
+	.blog-post-homepage-description-background-color { background-color: rgba(255,255,255,1); }
+.blog-post-homepage-TOI-description-color { color: #414141; }
+	.blog-post-homepage-TOI-description-color { color: rgba(65,65,65,1); }
+	.blog-post-homepage-TOI-description-fill { fill: #414141; }
+	.blog-post-homepage-TOI-description-fill { fill: rgba(65,65,65,1); }
+	.blog-post-homepage-TOI-description-background-color { background-color: #414141; }
+	.blog-post-homepage-TOI-description-background-color { background-color: rgba(65,65,65,1); }
+.blog-post-homepage-border-color { border-color: #A7A7A6; }
+	.blog-post-homepage-border-color { border-color: rgba(167,167,166,1); }
+.blog-post-homepage-overlay-background-color { background-color: undefined; }
+	.blog-post-homepage-overlay-background-color { background-color: 0.35); }
+.is-desktop .blog-post-homepage-link-hashtag-hover-color:hover { color: #80ADDC; }
+	.is-desktop .blog-post-homepage-link-hashtag-hover-color:hover { color: rgba(128,173,220,1); }
+	.is-desktop .blog-post-homepage-link-hashtag-hover-fill:hover { fill: #80ADDC; }
+	.is-desktop .blog-post-homepage-link-hashtag-hover-fill:hover { fill: rgba(128,173,220,1); }
+.blog-post-homepage-background-color { background-color: #414141; }
+	.blog-post-homepage-background-color { background-color: rgba(65,65,65,1); }
+.blog-post-homepage-TOI-background-color { background-color: #FFFFFF; }
+	.blog-post-homepage-TOI-background-color { background-color: rgba(255,255,255,1); }
+.is-desktop .blog-post-homepage-hover-container:hover .blog-hover-container-element-color { color: #80ADDC; }
+	.is-desktop .blog-post-homepage-hover-container:hover .blog-hover-container-element-color { color: rgba(128,173,220,1); }
+	.is-desktop .blog-post-homepage-hover-container:hover .blog-hover-container-element-fill { fill: #80ADDC; }
+	.is-desktop .blog-post-homepage-hover-container:hover .blog-hover-container-element-fill { fill: rgba(128,173,220,1); }
+.blog-post-homepage-post-container .blog-link-hashtag-color { color: #80ADDC; }
+	.blog-post-homepage-post-container .blog-link-hashtag-color { color: rgba(128,173,220,1); }
+.blog-post-homepage-post-container .blog-post-text-font { font:normal normal normal 38px/1.4em opensanshebrewcondensed-regular,sans-serif;  line-height: normal; }
+	.blog-post-homepage-post-container .blog-post-text-font { font:normal normal normal 16px/20px "open sans",sans-serif; line-height: normal; }
+.blog-post-homepage-post-container .blog-post-text-color { color: #FFFFFF; }
+	.blog-post-homepage-post-container .blog-post-text-color { color: rgba(255,255,255,1); }
+.blog-post-homepage-post-container .blog-icon-fill { fill: #FFFFFF; }
+	.blog-post-homepage-post-container .blog-icon-fill { fill: rgba(255,255,255,1); }
+.is-desktop .blog-post-homepage-post-container .blog-link-hover-color:hover { color: #80ADDC; }
+	.is-desktop .blog-post-homepage-post-container .blog-link-hover-color:hover { color: rgba(128,173,220,1); }
+	.is-desktop .blog-post-homepage-post-container .blog-link-hover-fill:hover { fill: #80ADDC; }
+	.is-desktop .blog-post-homepage-post-container .blog-link-hover-fill:hover { fill: rgba(128,173,220,1); }
+
+.blog-post-category-title-font { font:normal normal normal 38px/1.4em opensanshebrewcondensed-regular,sans-serif; font-size: 28px; line-height: normal; }
+	.blog-post-category-title-font { font:normal normal normal 26px/32px "open sans",sans-serif; line-height: normal; }
+.blog-post-category-description-style-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif; font-size: 16px; line-height: normal; }
+	.blog-post-category-description-style-font { font:normal normal normal 16px/20px "open sans",sans-serif; line-height: normal; }
+.blog-post-category-description-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif; font-size: 16px; line-height: normal; }
+	.blog-post-category-description-font { font:normal normal normal 16px/20px "open sans",sans-serif; line-height: normal; }
+	.blog-post-category-description-font { font-style: inherit; font-weight: inherit; text-decoration: inherit; }
+.blog-post-category-title-color { color: #FFFFFF; }
+	.blog-post-category-title-color { color: rgba(255,255,255,1); }
+.blog-post-category-TOI-title-color { color: #414141; }
+	.blog-post-category-TOI-title-color { color: rgba(65,65,65,1); }
+.blog-post-category-description-color { color: #FFFFFF; }
+	.blog-post-category-description-color { color: rgba(255,255,255,1); }
+	.blog-post-category-description-fill { fill: #FFFFFF; }
+	.blog-post-category-description-fill { fill: rgba(255,255,255,1); }
+	.blog-post-category-description-background-color { background-color: #FFFFFF; }
+	.blog-post-category-description-background-color { background-color: rgba(255,255,255,1); }
+.blog-post-category-TOIdescription-color { color: #414141; }
+	.blog-post-category-TOIdescription-color { color: rgba(65,65,65,1); }
+	.blog-post-category-TOIdescription-fill { fill: #414141; }
+	.blog-post-category-TOIdescription-fill { fill: rgba(65,65,65,1); }
+	.blog-post-category-TOIdescription-background-color { background-color: #414141; }
+	.blog-post-category-TOIdescription-background-color { background-color: rgba(65,65,65,1); }
+.blog-post-category-border-color { border-color: #A7A7A6; }
+	.blog-post-category-border-color { border-color: rgba(167,167,166,1); }
+.blog-post-category-overlay-background-color { background-color: undefined; }
+	.blog-post-category-overlay-background-color { background-color: 0.35); }
+.is-desktop .blog-post-category-link-hashtag-hover-color:hover { color: #80ADDC; }
+	.is-desktop .blog-post-category-link-hashtag-hover-color:hover { color: rgba(128,173,220,1); }
+	.is-desktop .blog-post-category-link-hashtag-hover-fill:hover { fill: #80ADDC; }
+	.is-desktop .blog-post-category-link-hashtag-hover-fill:hover { fill: rgba(128,173,220,1); }
+.blog-post-category-background-color { background-color: #414141; }
+	.blog-post-category-background-color { background-color: rgba(65,65,65,1); }
+.blog-post-category-TOI-background-color { background-color: #FFFFFF; }
+	.blog-post-category-TOI-background-color { background-color: rgba(255,255,255,1); }
+.is-desktop .blog-post-category-hover-container:hover .blog-hover-container-element-color { color: #80ADDC; }
+	.is-desktop .blog-post-category-hover-container:hover .blog-hover-container-element-color { color: rgba(128,173,220,1); }
+	.is-desktop .blog-post-category-hover-container:hover .blog-hover-container-element-fill { fill: #80ADDC; }
+	.is-desktop .blog-post-category-hover-container:hover .blog-hover-container-element-fill { fill: rgba(128,173,220,1); }
+.blog-post-category-post-container .blog-link-hashtag-color { color: #80ADDC; }
+	.blog-post-category-post-container .blog-link-hashtag-color { color: rgba(128,173,220,1); }
+.blog-post-category-post-container .blog-post-text-font { font:normal normal normal 38px/1.4em opensanshebrewcondensed-regular,sans-serif;  line-height: normal; }
+	.blog-post-category-post-container .blog-post-text-font { font:normal normal normal 16px/20px "open sans",sans-serif; line-height: normal; }
+.blog-post-category-post-container .blog-post-text-color { color: #FFFFFF; }
+	.blog-post-category-post-container .blog-post-text-color { color: rgba(255,255,255,1); }
+.blog-post-category-post-container .blog-icon-fill { fill: #FFFFFF; }
+	.blog-post-category-post-container .blog-icon-fill { fill: rgba(255,255,255,1); }
+.is-desktop .blog-post-category-post-container .blog-link-hover-color:hover { color: #80ADDC; }
+	.is-desktop .blog-post-category-post-container .blog-link-hover-color:hover { color: rgba(128,173,220,1); }
+	.is-desktop .blog-post-category-post-container .blog-link-hover-fill:hover { fill: #80ADDC; }
+	.is-desktop .blog-post-category-post-container .blog-link-hover-fill:hover { fill: rgba(128,173,220,1); }
+
+/* Button styles */
+.blog-link-hashtag-color { color: #80ADDC; }
+	.blog-link-hashtag-color { color: #80ADDC; }
+.blog-button-primary-text-color { color: #414141; }
+	.blog-button-primary-text-color { color: rgba(65,65,65,1); }
+	.blog-button-primary-text-background-color { background-color: #414141; }
+	.blog-button-primary-text-background-color { background-color: rgba(65,65,65,1); }
+	.blog-button-primary-text-border-color { border-color: #414141; }
+	.blog-button-primary-text-border-color { border-color: rgba(65,65,65,1); }
+.blog-button-primary-icon-fill { fill: #414141; }
+	.blog-button-primary-icon-fill { fill: rgba(65,65,65,1); }
+	.blog-button-primary-icon-stroke { stroke: #414141; }
+	.blog-button-primary-icon-stroke { stroke: rgba(65,65,65,1); }
+.blog-button-secondary-text-color { color: #80ADDC; }
+	.blog-button-secondary-text-color { color: rgba(128,173,220,1); }
+.blog-button-secondary-text-hover-color:hover { color: #80ADDC; }
+	.blog-button-secondary-text-hover-color:hover { color: rgba(128,173,220,1); }
+.blog-button-secondary-icon-fill { fill: #80ADDC; }
+	.blog-button-secondary-icon-fill { fill: #80ADDC; }
+.blog-button-color { color: #80ADDC; }
+	.blog-button-color { color: rgba(128,173,220,1); }
+	.blog-button-background-color { background-color: #80ADDC; }
+	.blog-button-background-color { background-color: rgba(128,173,220,1); }
+	.blog-button-border-color { border-color: #80ADDC; }
+	.blog-button-border-color { border-color: rgba(128,173,220,1); }
+	.blog-button-border-bottom-color { border-bottom-color: #80ADDC; }
+	.blog-button-border-bottom-color { border-bottom-color: rgba(128,173,220,1); }
+	.blog-button-fill { fill: #80ADDC; }
+	.blog-button-fill { fill: rgba(128,173,220,1); }
+	.blog-button-stroke { stroke: #80ADDC; }
+	.blog-button-stroke { stroke: rgba(128,173,220,1); }
+.blog-button-hover-color:hover { color: #80ADDC; }
+	.blog-button-hover-color:hover { color: rgba(128,173,220,1); }
+.is-desktop .blog-tab-hover-color:hover { color: #80ADDC; }
+	.is-desktop .blog-tab-hover-color:hover { color: rgba(128,173,220,1); }
+.is-desktop .blog-button-hover-color:hover { color: #80ADDC; }
+	.is-desktop .blog-button-hover-color:hover { color: #80ADDC; }
+	.is-desktop .blog-button-hover-fill:hover { fill: #80ADDC; }
+	.is-desktop .blog-button-hover-fill:hover { fill: #80ADDC; }
+.is-desktop .blog-link-hover-color:hover { color: #80ADDC; }
+	.is-desktop .blog-link-hover-color:hover { color: #80ADDC; }
+	.is-desktop .blog-link-hover-fill:hover { fill: #80ADDC; }
+	.is-desktop .blog-link-hover-fill:hover { fill: #80ADDC; }
+.blog-quote-border-color { border-color: #80ADDC; }
+	.blog-quote-border-color { border-color: #80ADDC; }
+.is-desktop .blog-hover-container:hover .blog-hover-container-element-color { color: #80ADDC; }
+	.is-desktop .blog-hover-container:hover .blog-hover-container-element-color { color: #80ADDC; }
+	.is-desktop .blog-hover-container:hover .blog-hover-container-element-fill { fill: #80ADDC; }
+	.is-desktop .blog-hover-container:hover .blog-hover-container-element-fill { fill: #80ADDC; }
+.is-desktop .blog-button-hover-after-border-color:hover::after { border-color: #80ADDC; }
+	.is-desktop .blog-button-hover-after-border-color:hover::after { border-color: rgba(128,173,220,1); }
+.is-desktop .blog-button-after-border-color::after { border-color: #80ADDC; }
+	.is-desktop .blog-button-after-border-color::after { border-color: rgba(128,173,220,1); }
+.blog-icon-secondary-fill { fill: #10B395; }
+	.blog-icon-secondary-fill { fill: #10B395; }
+	.blog-icon-secondary-background-color { background-color: #10B395; }
+	.blog-icon-secondary-background-color { background-color: #10B395; }
+
+/* Widget styles */
+.blog-widget-sign-up-button-background-color { background-color: #80ADDC; }
+	.blog-widget-sign-up-button-background-color { background-color: #80ADDC; }
+.blog-widget-sign-up-button-border-color { border-color: #80ADDC; }
+	.blog-widget-sign-up-button-border-color { border-color: #80ADDC; }
+.blog-widget-sign-up-button-primary-color { color: #414141; }
+	.blog-widget-sign-up-button-primary-color { color: #414141; }
+.blog-widget-sign-up-button-secondary-color { color: #80ADDC; }
+	.blog-widget-sign-up-button-secondary-color { color: #80ADDC; }
+.blog-widget-sign-up-button-font { font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif;  line-height: normal; }
+	.blog-widget-sign-up-button-font { style.widget-signUpButtonFont line-height: normal; }
+.blog-widget-notification-icon-fill { fill: #FFFFFF; }
+	.blog-widget-notification-icon-fill { fill: #FFFFFF; }
+.blog-widget-notification-bubble-background-color { background-color: #FFFFFF; }
+	.blog-widget-notification-bubble-background-color { background-color: rgba(16,179,149,1); }
+.blog-widget-notification-bubble-text-color { color: #414141; }
+	.blog-widget-notification-bubble-text-color { color: rgba(65,65,65,1); }
+.blog-widget-avatar-border-color { border-color: #414141; }
+	.blog-widget-avatar-border-color { border-color: #414141; }
+
+/* Fixed styles */
+.blog-default-desktop-header-text-color { color: #FFFFFF; }
+	.blog-default-desktop-header-text-color { color: #FFFFFF; }
+.blog-default-card-background-color { background-color: #414141; }
+	.blog-default-card-background-color { background-color: #414141; }
+	.blog-default-card-border-bottom-color { border-bottom-color: #414141; }
+	.blog-default-card-border-bottom-color { border-bottom-color: #414141; }
+.blog-default-button-background-color { background-color: #80ADDC; }
+	.blog-default-button-background-color { background-color: #80ADDC; }
+</style>
+
+    
+  <style data-emotion=""></style><style wix-style="">.Title{ font:normal normal bold 100px/1.4em opensanshebrewcondensed-regular,sans-serif; } .Menu{ font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Page-title{ font:normal normal normal 38px/1.4em opensanshebrewcondensed-regular,sans-serif; } .Heading-XL{ font:normal normal normal 60px/1.4em opensanshebrewcondensed-regular,sans-serif; } .Heading-L{ font:normal normal normal 40px/1.4em opensanshebrewcondensed-regular,sans-serif; } .Heading-M{ font:normal normal normal 26px/1.4em avenir-lt-w01_35-light1475496,sans-serif; } .Heading-S{ font:normal normal normal 22px/1.4em avenir-lt-w01_35-light1475496,sans-serif; } .Body-L{ font:normal normal normal 18px/1.4em avenir-lt-w01_35-light1475496,sans-serif; } .Body-M{ font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif; } .Body-S{ font:normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif; } .Body-XS{ font:normal normal normal 12px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } }</style><link type="text/css" rel="stylesheet" href="dispatcher_data/languages.css"><style>:focus {
+    outline: none;
+}
+
+.js-focus-visible .focus-visible:focus,
+.js-focus-visible .focus-visible:focus ~ .wixSdkShowFocusOnSibling
+{
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 1px 2px #3899EC;
+}
+</style><script src="index_data/focus-visible.js" id="dynamic_script_FOCUS_VISIBLE"></script></head>
+
+  <body class="oSNla js-focus-visible">
+    
+
+    <div id="root"><div id="direction-provider-wrapper" data-reactroot=""><div dir="ltr"><div class="_1IR80 blog-background-color is-desktop app-desktop"><div><div></div></div><span></span><span><div id="content-wrapper"><div class="_2dQiv blog-header-background-color" data-hook="blog-desktop-header-container"><div class="Ucv1G"><nav class="_1YhEj blog-header__navigation blog-navigation-container-font"><ul class="_3ebWE"><li data-hook="header-navigation__/"><a target="_top" href="https://animeopen77.wixsite.com/mysite/jdyd-althybyh/" class="blog-link-hover-color _3ireX blog-navigation-container-color blog-navigation-container-hover-color blog-navigation-container-font blog-navigation-container-active-color">All Posts</a></li><li data-hook="header-navigation__/categories/getting-started"><a target="_top" href="https://animeopen77.wixsite.com/mysite/jdyd-althybyh/categories/getting-started" class="blog-link-hover-color _3ireX blog-navigation-container-color blog-navigation-container-hover-color blog-navigation-container-font">Getting Started</a></li><li data-hook="header-navigation__/categories/your-community"><a target="_top" href="https://animeopen77.wixsite.com/mysite/jdyd-althybyh/categories/your-community" class="blog-link-hover-color _3ireX blog-navigation-container-color blog-navigation-container-hover-color blog-navigation-container-font">Your Community</a></li></ul></nav><div class="_2YjJT"><div class="_3hdkt" data-hook="search-input"><div class="Z7PSy search-input" tabindex="0" role="button" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="_1lTvN blog-desktop-header-search-icon-fill"><path d="M12.8617648,11.8617648 L15.8633394,14.8633394 C15.9414442,14.9414442 15.9414442,15.0680772 15.8633394,15.1461821 L15.1461821,15.8633394 C15.0680772,15.9414442 14.9414442,15.9414442 14.8633394,15.8633394 L11.8617648,12.8617648 C10.9329713,13.578444 9.76865182,14.0047607 8.50476074,14.0047607 C5.46719462,14.0047607 3.00476074,11.5423269 3.00476074,8.50476074 C3.00476074,5.46719462 5.46719462,3.00476074 8.50476074,3.00476074 C11.5423269,3.00476074 14.0047607,5.46719462 14.0047607,8.50476074 C14.0047607,9.76865182 13.578444,10.9329713 12.8617648,11.8617648 Z M8.5,13 C10.9852814,13 13,10.9852814 13,8.5 C13,6.01471863 10.9852814,4 8.5,4 C6.01471863,4 4,6.01471863 4,8.5 C4,10.9852814 6.01471863,13 8.5,13 Z"></path></svg><input type="text" class="_3w2Nf blog-desktop-header-search-text-color blog-desktop-header-search-font search-input__input" placeholder="Search"><div class="_1Pqlr blog-desktop-header-search-text-color blog-desktop-header-search-font PuSOU">Search</div><div class="_1nkMY blog-desktop-header-search-border-background-color"></div><span></span></div></div></div></div><div class="_1Eyjp"></div></div><div class="_28VgF _1ej2g"><div></div><div class="cSnEi"><div></div><div><div><div class="_2SicU blog-post-description-font blog-card-background-color blog-text-color blog-card-border-color" style="border-width:1px"><div class="blog-post-title-font" data-hook="empty-states__title"><div class="_1hG9I">Great Stuff is On the Way!</div></div><div class="_3MRRe">Stay tuned...</div></div></div></div></div></div></div></span><div></div><div data-hook="modal-root"></div><div></div></div></div></div></div>
+
+    
+      <script>
+  var q = decodeURIComponent(location.search).split('&').reduce(function (a, b) { var i = b.split('='); a[i[0]] = i[1]; return a }, {});
+  window.parent.postMessage(
+  '{"intent":"TPA2","callId":1,"type":"applicationLoadingStep","compId":"' + q.compId + '","deviceType":"' + q.deviceType + '","data":{"version":"1.94.0", "args":{"stage":"firstMeaningfulPaint", "stageNum":0}}}', '*'
+  );
+</script>
+
+    
+
+  
+    
+    <script>
+      window.__APP_LIFECYCLE_STATUS__ = 'LOADING_SCRIPTS';
+      window._trackJs = {
+        enabled: Math.random() < 0.1,
+        token: '503060699e474927a75bc6f70393b1bb',
+        application: 'wix-social-blog',
+        userId: 'c9d13427-e6e8-41a7-aeab-b3d3c8902675',
+        onError: function (payload) {
+          var isInWix = window.top !== window.self;
+          var isWarning = payload && /^Warning:/.test(payload.message);
+          
+          if (!isInWix || isWarning) {
+            return false;
+          }
+          
+          function getFieldFromSearch(key, regexp) {
+              var search = window.location.search || '';
+              var match = search.match(regexp);
+              return {
+                key: key,
+                value: (match && match[1]) || '-'
+              }
+          }
+          
+          payload.metadata.push({
+            key: 'AppLifecycle',
+            value: window.__APP_LIFECYCLE_STATUS__
+          },
+          {
+            key: 'App',
+            value: 'app'
+          },
+          getFieldFromSearch('ViewMode', /viewMode=(\w+)/),
+          getFieldFromSearch('DeviceType', /deviceType=(\w+)/),
+          getFieldFromSearch('Locale', /locale=(\w+)/));
+          
+          return true;
+        },
+        network: {
+          error: false,
+        },
+        window: {
+          promise: false,
+        },
+      }
+    </script>
+    <script src="index_data/tracker.js" defer="defer"></script>
+  
+
+    
+      
+    
+
+    <script>
+(function() {
+    if (!(window.createImageBitmap && window.fetch)) return false;
+    fetch('data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=')
+    .then(function(r){return r.blob();})
+    .then(createImageBitmap)
+    .then(function() {return true;}, function() {return false;})
+    .then(function(isWebPSupported){window.__IS_WEBP_SUPPORTED__ = isWebPSupported});
+})();
+</script>
+
+    <script src="a_data/polyfill.js" crossorigin=""></script>
+
+    <script src="index_data/wix-private.js" crossorigin=""></script>
+
+    <script src="a_data/react.js" crossorigin=""></script>
+<script src="a_data/react-dom.js" crossorigin=""></script>
+
+    <script src="a_data/lodash.js" crossorigin=""></script>
+
+    <script src="a_data/moment-with-locales.js" crossorigin=""></script>
+
+    <script src="a_data/immutable.js" crossorigin="" defer="defer"></script>
+    <script src="a_data/Draft.js" crossorigin="" defer="defer"></script>
+    <script src="a_data/main.js" crossorigin="" defer="defer"></script>
+    <script src="a_data/blog.js" crossorigin="" defer="defer"></script>
+
+    
+      <script src="a_data/pinit.js" async="" data-pin-hover="true" data-pin-lang="en" data-pin-save="true" crossorigin=""></script>
+    
+
+    <script src="a_data/vendor-app.js" crossorigin="" defer="defer"></script>
+<script src="a_data/common-app.js" crossorigin="" defer="defer"></script>
+<script src="a_data/app.js" crossorigin="" defer="defer"></script>
+
+    
+
+    <script>
+      window.__INITIAL_STATE__ = {"appSettings":{"colorPresets":[{"name":"color_1","value":"#FFFFFF","reference":"white\u002Fblack"},{"name":"color_2","value":"#000000","reference":"black\u002Fwhite"},{"name":"color_3","value":"#ED1C24","reference":"primery-1"},{"name":"color_4","value":"#0088CB","reference":"primery-2"},{"name":"color_5","value":"#FFCB05","reference":"primery-3"},{"name":"color_11","value":"#414141","reference":"color-1"},{"name":"color_12","value":"#A7A7A6","reference":"color-2"},{"name":"color_13","value":"#D4D4D2","reference":"color-3"},{"name":"color_14","value":"#F9F9F9","reference":"color-4"},{"name":"color_15","value":"#FFFFFF","reference":"color-5"},{"name":"color_16","value":"#202B37","reference":"color-6"},{"name":"color_17","value":"#40576E","reference":"color-7"},{"name":"color_18","value":"#80ADDC","reference":"color-8"},{"name":"color_19","value":"#A6CBF2","reference":"color-9"},{"name":"color_20","value":"#C7E2FD","reference":"color-10"},{"name":"color_21","value":"#053C32","reference":"color-11"},{"name":"color_22","value":"#0B7763","reference":"color-12"},{"name":"color_23","value":"#10B395","reference":"color-13"},{"name":"color_24","value":"#6FCCBB","reference":"color-14"},{"name":"color_25","value":"#A0E6D9","reference":"color-15"},{"name":"color_26","value":"#28163C","reference":"color-16"},{"name":"color_27","value":"#502C77","reference":"color-17"},{"name":"color_28","value":"#7842B3","reference":"color-18"},{"name":"color_29","value":"#AB8CCC","reference":"color-19"},{"name":"color_30","value":"#CCB5E6","reference":"color-20"},{"name":"color_31","value":"#3C2037","reference":"color-21"},{"name":"color_32","value":"#773F6F","reference":"color-22"},{"name":"color_33","value":"#B35FA6","reference":"color-23"},{"name":"color_34","value":"#CC9CC5","reference":"color-24"},{"name":"color_35","value":"#E6C2E0","reference":"color-25"}],"textPresets":{"Title":{"editorKey":"font_0","lineHeight":"1.4em","style":"normal","weight":"bold","size":"100px","fontFamily":"opensanshebrewcondensed-regular","value":"font:normal normal bold 100px\u002F1.4em opensanshebrewcondensed-regular,sans-serif;"},"Menu":{"editorKey":"font_1","lineHeight":"1.4em","style":"normal","weight":"normal","size":"16px","fontFamily":"din-next-w01-light","value":"font:normal normal normal 16px\u002F1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;"},"Page-title":{"editorKey":"font_2","lineHeight":"1.4em","style":"normal","weight":"normal","size":"38px","fontFamily":"opensanshebrewcondensed-regular","value":"font:normal normal normal 38px\u002F1.4em opensanshebrewcondensed-regular,sans-serif;"},"Heading-XL":{"editorKey":"font_3","lineHeight":"1.4em","style":"normal","weight":"normal","size":"60px","fontFamily":"opensanshebrewcondensed-regular","value":"font:normal normal normal 60px\u002F1.4em opensanshebrewcondensed-regular,sans-serif;"},"Heading-L":{"editorKey":"font_4","lineHeight":"1.4em","style":"normal","weight":"normal","size":"40px","fontFamily":"opensanshebrewcondensed-regular","value":"font:normal normal normal 40px\u002F1.4em opensanshebrewcondensed-regular,sans-serif;"},"Heading-M":{"editorKey":"font_5","lineHeight":"1.4em","style":"normal","weight":"normal","size":"26px","fontFamily":"avenir-lt-w01_35-light1475496","value":"font:normal normal normal 26px\u002F1.4em avenir-lt-w01_35-light1475496,sans-serif;"},"Heading-S":{"editorKey":"font_6","lineHeight":"1.4em","style":"normal","weight":"normal","size":"22px","fontFamily":"avenir-lt-w01_35-light1475496","value":"font:normal normal normal 22px\u002F1.4em avenir-lt-w01_35-light1475496,sans-serif;"},"Body-L":{"editorKey":"font_7","lineHeight":"1.4em","style":"normal","weight":"normal","size":"18px","fontFamily":"avenir-lt-w01_35-light1475496","value":"font:normal normal normal 18px\u002F1.4em avenir-lt-w01_35-light1475496,sans-serif;"},"Body-M":{"editorKey":"font_8","lineHeight":"1.4em","style":"normal","weight":"normal","size":"15px","fontFamily":"avenir-lt-w01_35-light1475496","value":"font:normal normal normal 15px\u002F1.4em avenir-lt-w01_35-light1475496,sans-serif;"},"Body-S":{"editorKey":"font_9","lineHeight":"1.4em","style":"normal","weight":"normal","size":"15px","fontFamily":"avenir-lt-w01_35-light1475496","value":"font:normal normal normal 15px\u002F1.4em avenir-lt-w01_35-light1475496,sans-serif;"},"Body-XS":{"editorKey":"font_10","lineHeight":"1.4em","style":"normal","weight":"normal","size":"12px","fontFamily":"din-next-w01-light","value":"font:normal normal normal 12px\u002F1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;"}},"updatedAt":1544756700376,"style":{"colors":{},"numbers":{},"booleans":{},"fonts":{},"googleFontsCssUrl":"","uploadFontFaces":"","cssUrls":["\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fsanta-resources\u002Fresources\u002Fviewer\u002Fuser-site-fonts\u002Fv5\u002Flanguages.css"]},"custom":{}},"archive":{"posts":[],"entityCount":0},"auth":{"currentUser":null,"isAuthenticated":false,"isAuthenticating":false},"headerWidget":{"showLogin":true},"comments":{},"communitiesContext":{"14ad9202-3dd3-128a-57bd-e5675fd7e313":{"instanceId":null,"isInstalled":false,"baseUrl":"https:\u002F\u002Fapps.wix.com\u002Fmembers","baseStaticUrl":"\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fcommunities-members-app\u002F1.199.0\u002F"},"14cc59bc-f0b7-15b8-e1c7-89ce41d0e0c9":{"isInstalled":true}},"commentEdit":null,"postEditor":{},"experiments":{"specs.wixBlog.InstallWithoutApps":"true","specs.media.MediaManager3":"true","specs.wixBlog.CollectMetrics":"false","specs.wixBlog.CssInHeadChunk":"false","specs.wixBlog.UseRCV":"true","specs.wixBlog.PostPage":"true","specs.wos.displaySocialBlog":"true","specs.wixBlog.InlineCss":"false","specs.wixBlog.AdminManagesAllPosts":"true","se_santaMembers":"new","specs.wixBlog.MobileHeader":"true","specs.wixBlog.MembersArea":"true","specs.wixMembers.UseMemberServices":"true","specs.wixBlog.PostListFullWidth":"true","specs.wixBlog.CanonicalUrl":"false","specs.wixBlog.OldSlugRedirect":"false","specs.wixBlog.EmitSsrEvent":"true","specs.wixBlog.UseMetaSiteIdFromInstance":"true","specs.wixBlog.RichContentEditor":"true","specs.wixBlog.BmPostsPagination":"true","specs.wixBlog.LiveSiteManageCategories":"true","specs.wixBlog.SetModalSrcManuallyInOneApp":"true","specs.wixMembers.RtlSupport":"true","specs.wixBlog.DisableViewportFix":"true","specs.wixMembers.ConvertToTemplateInstance":"true"},"appData":{"_id":"c9d13427-e6e8-41a7-aeab-b3d3c8902675","label":"Welcome to Your Blog","menuLabel":"All Posts","description":"Review the posts below for some great tips. To edit this header go to Settings \u003E Categories.","language":"en","cover":{"original_file_name":"a27d24_85296a50517f45428acb01b9c4911ba1~mv2_d_3992_1513_s_2.jpg","file_name":"a27d24_85296a50517f45428acb01b9c4911ba1~mv2_d_3992_1513_s_2.jpg","width":3992,"height":1513},"overlayColor":{"color":"#ffffff","opacity":0.35},"backgroundColor":{"color":"#FFFFFF","opacity":1},"coverType":"image","textColor":{"color":"#000000","opacity":1},"isPrivate":false,"postPageEnabled":true},"header":{"offset":0,"height":0},"isAppLoaded":false,"isDemoMode":false,"isLoaded":{"feed-posts":true},"isLoading":{"feed-posts":false},"loadingBar":0,"locale":"en","locationHistory":{"items":[]},"members":{"idList":[],"metadata":{"count":0}},"message":{},"modal":{"byId":{},"idList":[]},"newPostMessage":null,"pagination":{"comments":{"entitiesByPage":{}},"posts":{"entitiesByPage":{"1":[]},"currentPage":1,"pageSize":20,"entityCount":0},"posts-unpublished":{"entitiesByPage":{}},"posts-published":{"entitiesByPage":{}}},"posts":{},"routing":{"locationBeforeTransitions":{"pathname":"\u002F","search":"","hash":"","action":"POP","key":null,"query":{}}},"recentPostsIds":{},"search":{"posts":[],"members":[]},"searchInput":{"inputWidth":0},"searchParams":{"cacheKiller":"1544707877452","compId":"TPASection_jpmwl1u4","currency":"SAR","deviceType":"desktop","height":"570","instance":"6rpETxFFyFUxkNCWLQprQoVQYTpAgzK7_UYAaNWmcVQ.eyJpbnN0YW5jZUlkIjoiYzlkMTM0MjctZTZlOC00MWE3LWFlYWItYjNkM2M4OTAyNjc1IiwiYXBwRGVmSWQiOiIxNGJjZGVkNy0wMDY2LTdjMzUtMTRkNy00NjZjYjNmMDkxMDMiLCJtZXRhU2l0ZUlkIjoiYmYwODk1NTctOGIwZi00MjZhLWFiMjMtYjJkMzYzZjUxN2VmIiwic2lnbkRhdGUiOiIyMDE4LTEyLTE0VDAzOjAyOjM5LjE4MFoiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6Ijk1LjIxOC43My45Ni8xNTkyOCIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiI1MjJiMzFjNy0zNTRiLTQxZTUtOTNkOS0wODJiNTU2YWFhYTEiLCJiaVRva2VuIjoiNzZkOWExNzAtNmRlNy0wM2NkLTA1ODgtMDEwMGFiNjUzMTlhIiwic2l0ZU93bmVySWQiOiI2NDYxOTU4OS1jODFhLTRmODUtYWFlYy1lODhhMDAyODM2ZjEifQ","locale":"en","pageId":"vf5s1","section-url":"https:\u002F\u002Fanimeopen77.wixsite.com\u002Fmysite\u002Fjdyd-althybyh\u002F","target":"_top","tz":"Asia\u002FRiyadh","viewMode":"site","vsi":"4a88f0e0-8962-45a4-a5ad-71da8d61cda8","width":"1217"},"siteInfo":{},"sitePages":[],"socket":{"connected":false,"connecting":true},"categories":[{"_id":"5c129cd7cebe2c001a329ac6","label":"Get Started With Wix Blog","menuLabel":"Getting Started","description":"","rank":-1,"coverType":"image","instanceId":"c9d13427-e6e8-41a7-aeab-b3d3c8902675","slugs":["getting-started"],"slug":"getting-started"},{"_id":"5c129cd7cebe2c001a329ac7","label":"Build a Blog Community","menuLabel":"Your Community","description":"","rank":-1,"coverType":"image","instanceId":"c9d13427-e6e8-41a7-aeab-b3d3c8902675","slugs":["your-community"],"slug":"your-community"}],"typing":[],"users":{},"userAgent":{"isAuthoritative":true,"isMobile":false,"isTablet":false,"isiPad":false,"isiPod":false,"isiPhone":false,"isAndroid":false,"isBlackberry":false,"isOpera":false,"isIE":false,"isEdge":false,"isIECompatibilityMode":false,"isSafari":false,"isFirefox":true,"isWebkit":false,"isChrome":false,"isKonqueror":false,"isOmniWeb":false,"isSeaMonkey":false,"isFlock":false,"isAmaya":false,"isPhantomJS":false,"isEpiphany":false,"isDesktop":true,"isWindows":true,"isLinux":false,"isLinux64":false,"isMac":false,"isChromeOS":false,"isBada":false,"isSamsung":false,"isRaspberry":false,"isBot":false,"isCurl":false,"isAndroidTablet":false,"isWinJs":false,"isKindleFire":false,"isSilk":false,"isCaptive":false,"isSmartTV":false,"isUC":false,"isFacebook":false,"isAlamoFire":false,"silkAccelerated":false,"browser":"Firefox","version":"63.0","os":"Windows 10.0","platform":"Microsoft Windows","geoIp":{"geoip_country_code":"SA","geoip_country_code3":"SAU"},"source":"Mozilla\u002F5.0 (Windows NT 10.0; rv:63.0) Gecko\u002F20100101 Firefox\u002F63.0"},"userStats":{"isNotificationCountUpdateAllowed":true},"viewMode":"site","writers":[],"rceTranslations":null,"form":{"comment":{"_asyncValidating":false,"_initialized":false,"_submitting":false,"_submitFailed":false},"profile":{"_asyncValidating":false,"_initialized":false,"_submitting":false,"_submitFailed":false},"__esModule":{"_asyncValidating":false,"_initialized":false,"_submitting":false,"_submitFailed":false},"stripNewLines":{"_asyncValidating":false,"_initialized":false,"_submitting":false,"_submitFailed":false},"post":{"_asyncValidating":false,"_initialized":false,"_submitting":false,"_submitFailed":false,"title":{"value":"","_isFieldValue":true}},"category":{"_asyncValidating":false,"_initialized":false,"_submitting":false,"_submitFailed":false,"label":{"value":"","_isFieldValue":true},"description":{"value":"","_isFieldValue":true}},"categoryInline":{"_asyncValidating":false,"_initialized":false,"_submitting":false,"_submitFailed":false,"label":{"value":"","_isFieldValue":true}}}};
+      window.__CONFIG__ = {"bundleName":"app","imageHost":"static.wixstatic.com","videoHost":"video.wixstatic.com","sectionUrl":"https:\u002F\u002Fanimeopen77.wixsite.com\u002Fmysite\u002Fjdyd-althybyh","instanceId":"c9d13427-e6e8-41a7-aeab-b3d3c8902675","duplexer":{"url":"forums.wix.com\u002Fwix-duplexer-sockets-server","key":"8dd942aa-6255-4bb0-b004-8bd6cf2f6b35"},"isInEditor":false,"isDevMode":false,"postPageSectionUrl":"https:\u002F\u002Fanimeopen77.wixsite.com\u002Fmysite\u002Fpost"};
+      window.__INITIAL_I18N__ = {"localeData":{"account-suspended.account-suspended":"Account Suspended","account-suspended.contact-owner":"For further information get in touch with the site owner.","add-categories-mobile-header.submit-button-label":"Save","add-category-button.label":"Choose Categories","app.loading":"Loading...","author-info-page.title":"Settings","badge.admin":"Admin","badge.owner":"Admin","badge.writer":"Writer","block-confirmation.cancel-button":"Cancel","block-member-modal.are-you-sure":"Are you sure you want to block this user?","block-member-modal.block-user":"Block Member","block-member-modal.confirm":"Block","categories-menu.all-categories":"All Categories","category-actions.delete-category":"Delete Category","category-actions.edit-category":"Edit Category","category-actions.subscribe-category":"Follow Category","category-actions.unsubscribe-category":"Unfollow Category","category-create-button.create":"Create","category-form.name-your-category":"Name your new category...","category-form.registered-users-only":"This category is for registered users only","category-form.this-category-is-open":"This category is open to everyone","category-form.use-this-space":"Use this space to give people a little more info about your category...","category-inline-form.placeholder":"e.g. Travel, Food, etc","category-list-item.total-posts_plural":"{{count, number}} posts","category-list-item.total-posts":"{{count, number}} post","category-list-item.total-views_plural":"{{count, number}} views","category-list-item.total-views":"{{count, number}} view","category-list-item.view-category":"View Category","category-page-desktop-header.categories":"Categories","category-page.create-new-post":"Readers would love to hear about this topic!","category-page.no-posts-yet":"Add Posts to This Category","category-select.hint":"Choose categories for this post","category-select.no-categories-hint":"Site owners can add categories from the Wix Editor. Go to Blog Settings \u003E Categories.","category-select.submit-button-label":"Done","category-select.title":"Choose Categories","category-select.tooltip":"10 categories max per post.","change-post-category-modal.move-post-to-another-category":"Move post to another category","character-count.label":"Characters: {{count}}","comment-actions.delete-comment":"Delete Comment","comment-actions.edit-comment":"Edit Comment","comment-actions.report-comment":"Report Comment","comment-actions.share-comment":"Share Comment","comment-bar.send":"Send","comment-count.label_plural":"{{count, number}} comments","comment-count.label":"{{count, number}} comment","comment-edit-page-header.update":"Update","comment-form.cancel":"Cancel","comment-form.edited":"Edited: {{timeAgo}}","comment-form.publish":"Publish","comment-form.send":"Send","comment.edited":"Edited: {{timeAgo}}","comment.reply":"Reply","counter.count":"{{count, number}}","create-category-card.create-new-category":"Create New Category","create-category-card.get-conversation-going":"Get the conversation going with a brand new category","create-category-card.have-something-to-say":"Have something to say?","create-post-button.label":"Create a Post","create-post-card.create-post":"Create a Post","date":"{{time, date}}","delete-category-modal.delete-category":"Delete Category","delete-category-modal.will-delete-posts-and-comments":"Deleting this category will also remove all its posts and comments","delete-category-modal-backoffice.title":"Delete Category","delete-category-modal-backoffice.question-title":"Are you sure you want to delete this category?","delete-category-modal-backoffice.question-explanation":"Posts from this category will still appear in your All Posts Feed.","delete-category-modal-backoffice.cancel-button":"Cancel","delete-category-modal-backoffice.ok-button":"Delete","delete-comment-modal.are-you-sure":"Are you sure you want to delete this comment?","delete-comment-modal.delete-comment":"Delete Comment","delete-confirmation.cancel":"Cancel","delete-confirmation.delete":"Delete","delete-post-modal-backoffice.are-you-sure-draft":"Are you sure you want to permanently delete this draft?","delete-post-modal-backoffice.are-you-sure-post":"Are you sure you want to permanently delete this post?","delete-post-modal-backoffice.cancel-button":"Cancel","delete-post-modal-backoffice.delete-draft":"Delete Draft","delete-post-modal-backoffice.delete-post":"Delete Post","delete-post-modal-backoffice.ok-button":"Delete","delete-post-modal.delete-post":"Delete Post","delete-post-modal.will-detele-comments":"Are you sure you want to permanently delete this post?","demo-confirmation.cancel-button":"Close","demo-modal.activate-forum":"Activate Blog","demo-modal.confirm":"Got It","demo-modal.demo-mode":"Demo Mode","demo-modal.message-preview":"Activate this blog to make it yours.","demo-modal.message-site":"This blog isn't set up yet. Check back soon.","demo-modal.message-template":"To make this blog yours, start editing this template.","demote-writer-modal.about-to-remove":"You’re about to remove this member as a writer for your blog.","demote-writer-modal.cancel":"Cancel","demote-writer-modal.confirm":"Remove","demote-writer-modal.title":"Remove This Member as a Writer","demote-writer-modal.will-no-longer":"\u2028\u2028They’ll no longer be able to add posts or manage their existing posts.","discard-post-draft-modal.cancel-button-label":"Stay","discard-post-draft-modal.confirm-button-label":"Discard","discard-post-draft-modal.content":"Any changes you’ve made since you last published will be lost.","discard-post-draft-modal.title":"Discard Changes","discard-post-modal.are-you-sure":"Changes made to your About Page will not be saved.","discard-post-modal.cancel":"Cancel","discard-post-modal.confirm":"Discard","discard-post-modal.discard-post":"Discard Changes","discard-post-settings-modal.cancel-button-label":"Keep Editing","discard-post-settings-modal.confirm-button-label":"Discard","discard-post-settings-modal.content":"Changes made to your Post Settings will not be saved.","discard-post-settings-modal.title":"Discard Changes?","draft-list-item.last-edited-date":"Last edited {{date}}","edit-category-discard-changes-modal.description":"Any changes made to this category will not be saved.","edit-category-discard-changes-modal.discard":"Discard","edit-category-discard-changes-modal.keep-editing":"Keep Editing","edit-category-discard-changes-modal.title":"Discard Changes?","edit-category-form.cancel":"Cancel","edit-category-form.category-label":"Category Label","edit-category-form.category-label-tooltip":"Labels show up in your posts and blog menu. Keep them short and informative e.g., Lifestyle, Photography, etc.","edit-category-form.category-label-placeholder":"Enter category label...","edit-category-form.category-title":"Category Title","edit-category-form.category-title-tooltip":"This is the title of your category page. It also shows up on search engines and when the category page is shared on social media.","edit-category-form.category-title-placeholder":"Enter category title...","edit-category-form.category-description":"Category Description","edit-category-form.category-description-tooltip":"Category descriptions show up on search engines and when the category page is shared on social media.","edit-category-form.category-description-placeholder":"Describe your category...","edit-category-form.category-cover":"Category Image (Optional)","edit-category-form.category-cover-tooltip":"Choose an image for your category page. It shows up when people share this category on social media.","edit-category-form.field-required":"This info is required.","edit-category-form.image-add":"Add Image","edit-category-form.image-remove":"Delete","edit-category-form.image-replace":"Change Image","edit-category-form.image-uploading":"Please wait \u003Cstrong\u003Eimage\u003C\u002Fstrong\u003E is uploading.","edit-category-form.form-seo-title":"SEO & SOCIAL SHARING","edit-category-form.form-title":"Edit Category","edit-category-form.save":"Save","edit-category-form.untitled-label":"Untitled Category","follow-button.follow":"Follow","follow-button.unfollow":"Following","follow-member-modal.cancel":"Cancel","follow-member-modal.unfollow-user":"Unfollow {{name}}?","follow-member-modal.unfollow":"Unfollow","followers-menu.followers":"Followers","followers-menu.following":"Following","followers-page.empty-state-content-current-user":"Creating posts, writing comments and following other people are all great ways to grow your audience.","followers-page.empty-state-content":"Be the first person to follow this member.","followers-page.empty-state-title-current-user":"No Followers Yet","followers-page.empty-state-title":"No Followers Yet","following-page.empty-state-content-current-user":"See all the members of this forum, and follow anyone in a click.","following-page.empty-state-content":"This member isn’t following anyone yet.","following-page.empty-state-title-current-user":"Find Members to Follow","following-page.empty-state-title":"Nothing to See","following-page.members-page-link":"View Members","fullDate":"{{time, fullDate}}","google-preview.header":"Preview On Google","header-back-button.back":"Back","header-back-button.cancel":"Cancel","header-buttons.sign-up":"Sign Up","header-navigation.latest-posts":"Latest Posts","header.account-suspended":"Account Suspended","header.create-category":"Create Category","header.create-post":"Create Post","header.edit-category":"Edit Category","header.edit-post":"Edit Post","header.followers":"Followers","header.following":"Following","header.login":"Log in","header.members":"Members","header.more-button":"More","header.notifications":"Notifications","header.profile-settings":"Settings","header.profile":"My Profile","header.search":"Search","header.sign-up-button":"Login \u002F Sign up","like-button.is-liked":"Is liked","like-button.is-unliked":"Is unliked","like-button.total-likes_plural":"likes","like-button.total-likes":"like","login-button.sign-up":"Sign Up","login-screen.login-description":"In order to access this page you need to log in to the forum.","login-screen.login-required":"Log in required","login-to-comment.login-to-join":"{{login}} to leave a comment!","login-to-comment.login":"Log in","manage-categories-empty-state.create-new":"New Category","manage-categories-empty-state.no-categories-description":"Categories make it easy for readers to navigate your blog and find posts by topic.","manage-categories-empty-state.no-categories-title":"Get Started With Categories","manage-categories-feed-label-form.cancel":"Cancel","manage-categories-feed-label-form.form-title":"Rename Your All Posts Feed","manage-categories-feed-label-form.label-input-label":"Menu Label","manage-categories-feed-label-form.label-error-required":"This info is required.","manage-categories-feed-label-form.label-input-tooltip":"Give your feed a name that’s relevant to your blog, e.g, Blog Home.","manage-categories-feed-label-form.save":"Save","manage-categories-feed-overview.title":"All Posts Feed","manage-categories-feed-overview.rename":"Rename","manage-categories-list.title":"Categories","manage-categories-list-item.edit":"Edit","manage-categories-list-item.delete":"Delete","manage-categories-page.create-new-category":"New Category","manage-categories-page.title":"Categories","manage-posts-empty-state.create-new-post":"Create New Post","manage-posts-empty-state.no-drafts-by-others-description":"This is where you’ll see drafts other writers are working on.","manage-posts-empty-state.no-drafts-description":"Every great post begins with a single word.","manage-posts-empty-state.no-drafts-title":"No Drafts Yet","manage-posts-empty-state.no-posts-by-others-description":"Once writers publish posts, you’ll see them here.","manage-posts-empty-state.no-posts-description":"Once you publish posts, you’ll see them here.","manage-posts-empty-state.no-posts-title":"No Posts Yet","manage-posts-filter.all-posts":"All Posts","manage-posts-filter.filter-by":"Filter by:","manage-posts-filter.my-posts":"My Posts","manage-posts-filter.posts-by-others":"Posts by Others","manage-posts-modal.blog":"Blog","manage-posts-modal.create-new-post-button-label":"Create New Post","manage-posts-modal.create-new-post-empty-state":"Create a Post","manage-posts-modal.create-post-text":"Let's create a new blog post.","manage-posts-modal.create-post":"Create Post","manage-posts-modal.disabled-commenting-tooltip":"Commenting disabled","manage-posts-modal.drafts":"Drafts ({{count, number}})","manage-posts-modal.drafts-no-count":"Drafts","manage-posts-modal.edit-button-label":"Edit","manage-posts-modal.edit-post":"Edit Post","manage-posts-modal.manage-posts":"Posts","manage-posts-modal.no-drafts-text-small":"Every great post begins with a single word.","manage-posts-modal.no-drafts-text":"No Drafts Yet","manage-posts-modal.no-posts-text":"You haven't published any posts yet.","manage-posts-modal.published":"Published ({{count, number}})","manage-posts-modal.published-no-count":"Published","manage-posts-modal.replace-tooltip":"Replace","manage-posts-modal.unpublished-changes-tooltip":"Unpublished changes","manage-posts-modal.user-form-disclaimer":"It’s easy to manage your blog from your live website. Manage posts and comments, add writers & more.","manage-posts-modal.username-placeholder":"Add your name here...","manage-posts-modal.username":"Choose an author name","member-filter.placeholder":"Find a member...","member-list-item-desktop.date":"{{date, fullDate}}","member-list-item-desktop.followers-stats_plural":"Followers","member-list-item-desktop.followers-stats":"Follower","member-list-item-desktop.my-profile":"My Profile","member-list-item-desktop.posts-stats_plural":"Posts","member-list-item-desktop.posts-stats":"Post","member-list-item.date":"{{date, fullDate}}","member-list-item.followers-stats_plural":"{{count, number}} Followers","member-list-item.followers-stats":"{{count, number}} Follower","member-list-item.posts-stats_plural":"{{count, number}} Posts","member-list-item.posts-stats":"{{count, number}} Post","member-sort-field.follower-count":"Sort by: No. of followers","member-sort-field.newest-first":"Sort by: Newest to oldest","member-sort-field.oldest-first":"Sort by: Oldest to newest","member-sort-field.posts-count":"Sort by: No. of posts","member-sort-field.role":"Sort by: Member Role","members-page.sign-up-content":"Sign up to check out member profiles, make comments, follow posts & more.","members-page.sign-up-title":"Become a Member","members-placeholder.content":"Once your site is live, log in with your Wix account to see all your members here.","members-placeholder.title":"Publish Your Site to See Members","messages.category-created":"Category \u003Cstrong\u003Ecreated\u003C\u002Fstrong\u003E.","messages.category-deleted":"Category \u003Cstrong\u003Edeleted\u003C\u002Fstrong\u003E.","messages.category-fields-required":"To publish add a \u003Cstrong\u003Etitle\u003C\u002Fstrong\u003E & \u003Cstrong\u003Ea few words\u003C\u002Fstrong\u003E.","messages.category-subscribed":"You are now \u003Cstrong\u003Efollowing\u003C\u002Fstrong\u003E this category!","messages.category-title-required":"Add a \u003Cstrong\u003Ename\u003C\u002Fstrong\u003E to go ahead and create.","messages.category-unsubscribed":"You are \u003Cstrong\u003Eno longer following\u003C\u002Fstrong\u003E this category!","messages.category-updated":"Category \u003Cstrong\u003Eupdated\u003C\u002Fstrong\u003E.","messages.comment-deleted":"Comment \u003Cstrong\u003EDeleted\u003C\u002Fstrong\u003E.","messages.comment-updated":"Comment \u003Cstrong\u003EUpdated\u003C\u002Fstrong\u003E.","messages.commenting-disabled":"Readers can no longer comment on this post.","messages.commenting-enabled":"Readers can now comment on this post!","messages.demo-mode-editor":"Double click to set up your blog","messages.demo-mode-preview-activate":"click here","messages.demo-mode-preview":"To activate your blog, {{activate}}","messages.demo-mode-site":"This blog isn't set up yet. Check back soon.","messages.draft-deleted":"Your draft has been deleted.","messages.draft-duplicated":"Success! Draft duplicated.","messages.post-category-changed":"Post category successfully \u003Cstrong\u003Echanged\u003C\u002Fstrong\u003E.","messages.post-content-required":"Add a \u003Cstrong\u003Epost\u003C\u002Fstrong\u003E to go ahead and publish.","messages.post-delete-another-writer-editing-error":"You can't delete this post right now because someone else is working on it. Try again later.","messages.post-deleted":"Your post has been deleted.","messages.post-duplicated":"Success! Post duplicated.","messages.post-fields-required":"To publish add a \u003Cstrong\u003Etitle\u003C\u002Fstrong\u003E & \u003Cstrong\u003Ea few words\u003C\u002Fstrong\u003E.","messages.post-moved":"Post successfully \u003Cstrong\u003Emoved\u003C\u002Fstrong\u003E.","messages.post-pinned":"This post is now \u003Cstrong\u003Epinned\u003C\u002Fstrong\u003E to your feed.","messages.post-published":"Great, post published!","messages.post-subscribed":"You are now \u003Cstrong\u003Efollowing\u003C\u002Fstrong\u003E this post!","messages.post-title-required":"Add a \u003Cstrong\u003Etitle\u003C\u002Fstrong\u003E to go ahead and publish.","messages.post-unpinned":"This post is \u003Cstrong\u003Eno longer pinned\u003C\u002Fstrong\u003E to your feed.","messages.post-unsubscribed":"You are \u003Cstrong\u003Eno longer following\u003C\u002Fstrong\u003E this post!","messages.post-updated":"Your post has been updated.","messages.profile-cover-uploading":"Please wait profile \u003Cstrong\u003Ecover\u003C\u002Fstrong\u003E is uploading.","messages.profile-image-uploading":"Please wait profile \u003Cstrong\u003Eimage\u003C\u002Fstrong\u003E is uploading.","messages.profile-name-required":"Add a your \u003Cstrong\u003Ename\u003C\u002Fstrong\u003E and continue.","messages.profile-unknown-error":"Unknown error please contact support.","messages.profile-update-failed":"Failed to update profile","messages.profile-updated":"Your profile's updated.","messages.user-blocked":"Member successfully \u003Cstrong\u003Eblocked\u003C\u002Fstrong\u003E.","messages.user-demoted-writer":"This member is no longer a writer of your blog","messages.user-promoted-writer":"This member is now a writer of your blog","messages.user-subscribed":"You are now \u003Cstrong\u003Efollowing\u003C\u002Fstrong\u003E this member!","messages.user-unblocked":"Member successfully \u003Cstrong\u003Eunblocked\u003C\u002Fstrong\u003E.","messages.user-unsubscribed":"You are \u003Cstrong\u003Eno longer following\u003C\u002Fstrong\u003E this member!","more-button.more-actions":"More actions","move-post-modal.move-this-post":"Move this post to","move-to-category.cancel":"Cancel","move-to-category.move-post":"Move Post","move-to-category.move-to-category":"Move to Category","new-post-message.new-posts":"New posts","no-comments.content":"Check back soon.","no-comments.title":"I Haven't Made Any Comments Yet","no-drafts-allowed.content":"Want to write for the blog? Contact us.","no-drafts-allowed.title":"No Drafts Yet","no-drafts.content":"Every great post begins with a single word.","no-drafts.title":"No Drafts Yet","no-likes.content":"Check back soon.","no-likes.title":"I Haven't Liked Any Posts Yet","no-member-results.no-members-found":"We couldn't find any members with the name {{name}}.","no-member-results.nothings-coming-up":"Nothing's Coming Up","no-member-results.try-again":"Try another search.","no-posts-allowed.content":"Want to write for the blog? Contact us.","no-posts-allowed.title":"No Posts Yet","no-posts-feed-writer.create-first-post":"Create Your First Post","no-posts-feed-writer.create-posts":"Fill up this page with awesome posts for your readers!","no-posts-feed.on-the-way":"Great Stuff is On the Way!","no-posts-feed.stay-tuned":"Stay tuned...","no-posts-writer.create-posts":"Add Posts to This Category","no-posts-writer.readers-would-love":"Readers would love to hear about this topic!","no-posts.content":"Check back soon.","no-posts.explore-other-categories":"Explore other categories in this blog or check back later.","no-posts.posts-coming-soon":"Posts Coming Soon","no-posts.title":"Working On My First Post","no-post-found.title":"Your Post Will Appear Here","no-post-found.message":"Once you’ve published your post, here’s where you’ll find it.","no-search-results.members":"Members","no-search-results.no-results-found-title":"No Results Found","no-search-results.no-type-found-content.members":"We couldn’t find any Members with the name {{query}}.","no-search-results.no-type-found-content.posts":"We couldn’t find any Posts with the term {{query}}.","no-search-results.no-type-found-title":"No {{type}} Found","no-search-results.no-type-found-try-again-content":"Check the {{link}} tab or try another search.","no-search-results.posts":"Posts","no-search-results.try-again":"Looks like we couldn’t find what you’re looking for. Try another search.","no-user-posts.check-back-soon":"Once this member adds posts, you can follow and share them here. Check back soon!","no-user-posts.nothing-here-yet":"Nothing Here Yet","not-found.back":"See More Posts","not-found.head-back":"Check out some of the other great posts in this blog.","not-found.nothings-showing-up":"We Couldn’t Find This Page","notification-list-item.comment-liked":"{{name}} likes your comment in {{message}}","notification-list-item.comment-reported":"{{name}} reported a comment in {{title}} for {{message}}","notification-list-item.comment":"{{name}} commented on {{message}}","notification-list-item.message":"\"{{message}}\"","notification-list-item.name":"{{name}}","notification-list-item.permissions-writer-demoted":"{{name}} has removed you as a blog writer.","notification-list-item.permissions-writer-promoted":"{{name}} made you a writer in their blog. Now you can add posts and manage them.","notification-list-item.post-liked":"{{name}} likes your post {{message}}","notification-list-item.post-reported":"{{name}} reported {{title}} for {{message}}","notification-list-item.post":"{{name}} created a blog post {{message}}","notification-list-item.title":"\"{{title}}\"","notification-list-item.unknown":"Unknown notification type","notification-list-item.user-reported":"{{name}} reported {{reportedName}} for {{message}}","notifications-menu.members":"Members","notifications-menu.notifications":"Notifications","notifications-page.back-to-forum":"View Members","notifications-page.no-notifications-content":"Make comments, like posts or follow members to get things going.","notifications-page.no-notifications-title":"No Notifications Yet","notifications-settings.comments-description":"Notify me when members comment on my posts","notifications-settings.comments":"Comments","notifications-settings.description":"Manage your likes, comments & the people you’re following.","notifications-settings.email-notifications":"Email Notifications","notifications-settings.email":"Email","notifications-settings.general-description":"Notify me about forum updates","notifications-settings.general":"General","notifications-settings.likes-description":"Notify me when members like my posts","notifications-settings.likes":"Likes","notifications-settings.notifications":"Notifications","notifications-settings.push-notifications":"Push Notifications","notifications-settings.push":"Push","notifications-settings.subscriptions-description":"Notify me when members & discussions I follow post updates","notifications-settings.subscriptions":"Follows","pagination.first-page":"First page","pagination.last-page":"Last page","pagination.next-page":"Next page","pagination.page":"Page {{page, number}}","pagination.previous-page":"Previous page","post-actions.delete-draft":"Delete Draft","post-actions.delete-post":"Delete Post","post-actions.disable-commenting":"Turn Off Commenting","post-actions.duplicate-draft":"Duplicate Draft","post-actions.duplicate-post-copy-of":"Copy of","post-actions.duplicate-post":"Duplicate Post","post-actions.edit-post":"Edit Post","post-actions.enable-commenting":"Turn On Commenting","post-actions.follow":"Follow Post","post-actions.move-to-cateogory":"Move To Category","post-actions.pin-post":"Pin to Feed","post-actions.report-post":"Report Post","post-actions.share-post":"Share Post","post-actions.unfollow":"Unfollow Post","post-actions.unpin-post":"Unpin Post","post-create-actions.move-post":"Move Post","post-edit-in-progress-modal.cannot-edit-message":"Someone else is working on this post right now. Come back later.","post-edit-in-progress-modal.cannot-edit-title":"Edit in Progress","post-edit-in-progress-modal.got-it":"Got It","post-editor-header.back-button-label":"Back to Manage Posts","post-editor-mobile-header.close-button-label":"Cancel","post-editor-mobile-header.save-button-label":"Save & Continue","post-editor-mobile-header.status-saved":"Saved","post-editor-mobile-header.status-saving":"Saving...","post-editor-mobile-header.update-button-label":"Update","post-footer.share":"Share","post-footer.total-comments_plural":"{{count, number}} comments","post-footer.total-comments":"{{count, number}} comment","post-footer.view-count_plural":"{{count, number}} views","post-footer.view-count":"{{count, number}} view","post-form-action-sheet.category-button-label":"Choose Category","post-form-action-sheet.publish-button-label":"Save & Publish","post-form-action-sheet.save-button-label":"Save as Draft","post-form-actions.category-button-label":"Choose Category","post-form-actions.delete-button-label":"Delete Post","post-form-actions.discard-button-label":"Discard Changes","post-form-actions.post-settings-button-label":"Post Settings","post-form-actions.publish-button-label":"Save & Publish","post-form-actions.save-button-label":"Save Changes","post-form-actions.save-draft-button-label":"Save as Draft","post-form.cancel":"Cancel","post-form.content-error-tooltip":"Post title area appears to be blank. Please write something to publish your post.","post-form.give-this-post-a-title":"Add a Catchy Title","post-form.publish":"Publish","post-form.require-content":"Add a description to go ahead and publish.","post-form.require-fields":"To publish add a title & a few words.","post-form.require-title":"Add a title to go ahead and publish.","post-form.status-saved":"Saved","post-form.status-saving":"Saving...","post-form.update":"Publish Changes","post-form.uploading":"Just a sec. Hit Publish once your upload's done.","post-list-classic.comments":"Comments","post-list-classic.likes":"Likes","post-list-classic.recent-activity":"Recent Activity","post-list-classic.title":"Title","post-list-classic.views":"Views","post-main-actions.share":"Share","post-mobile-header.back-button-label":"All Posts","post-page.back-to-forum":"View Members","post-page.commenting-blocked":"You are unable to comment","post-page.commenting-disabled":"Commenting is disabled on this post.","post-page.edited":"Edited:","post-page.not-found-title":"We Couldn't Find This Page","post-page.not-fount-content":"Check out some of the other great posts in this blog.","post-settings-buttons.cancel-label":"Cancel","post-settings-buttons.submit-label":"Done","post-settings-buttons.save":"Save","post-settings-buttons.save-and-publish":"Save & Publish","post-settings-buttons.saving":"Saving...","post-settings-category-form.button":"Create New Category","post-settings-category-form.label":"Category label","post-settings-category-form.placeholder":"e.g. Travel, Food, etc.","post-settings-category-select.hint":"Add categories","post-settings-category-select.no-categories-hint":"There are no categories in this blog yet.","post-settings-label.title":"Post Settings","post-settings-page-metadata.title":"Manage post","post-settings-general.featured-post-label":"Feature This Post","post-settings-general.featured-post-tooltip":"Featured posts can be displayed anywhere on your site using a Custom Feed. To create a feed with your featured posts, go to the Editor \u003E double click on your blog \u003E Add-Ons \u003E Custom Feed.","post-settings-general.change-owner-label":"Author","post-settings-general.change-owner-tooltip":"Switch ownership of this post to another writer. You can still edit posts when they’re under another writer’s name.","post-settings-general.change-owner-tooltip-no-options":"Adding more writers is a great way to grow your blog. To add writers, go to Members Page \u003E Choose a Member \u003E Click the 3 dots \u003E Set as writer.","post-settings-seo.base-url":"www.your-site-name.com","post-settings-seo.description-label":"What’s the post about? (Post Description)","post-settings-seo.description-placeholder":"What makes this post unique? Tell Google what it’s all about.","post-settings-seo.description-tooltip":"Describe this post using relevant keywords and encourage new readers to check it out. It’s a great way to boost your Google page rank.","post-settings-seo.publish-date-edit":"Edit","post-settings-seo.publish-date-input-label":"Publish Date","post-settings-seo.publish-date-input-today-button":"Today","post-settings-seo.publish-date-input-tooltip":"You can schedule your post for today or a past date to change the chronological order of your posts.","post-settings-seo.publish-date-label":"Post Publish Date:","post-settings-seo.publish-date-reset":"Reset","post-settings-seo.slug-label":"What's the post URL?","post-settings-seo.slug-placeholder":"Post-Name","post-settings-seo.slug-tooltip":"This is the link to your post. Make it relevant and easy for people to remember.","post-settings-seo.title-label":"What's the title on search engines?","post-settings-seo.title-placeholder":"Post Title","post-settings-seo.title-tooltip":"This is the first thing people see about this post on Google. Add the title of the post and the name of your site or blog so people know what to expect.","post-settings-seo.canonical-url-label":"Canonical URL","post-settings-seo.canonical-url-placeholder":"Add a Canonical URL","post-settings-seo.canonical-url-tooltip":"Canonical URLs let search engines know which of your posts have identical or very similar content. Add a canonical URL to represent this post in search engine indexes.","post-settings-tabs.categories":"Categories","post-settings-tabs.settings":"Settings","post-settings-tabs.general":"General","post-settings-tabs.seo":"SEO","post-settings.cover-image.label":"Cover Image","post-settings.cover-image.tooltip":"You can upload a custom cover image. By default we take the first image in your post. Cover image will appear on blog feed and also when you share the post to social media","post-settings.cover-image.reset-button":"Reset","post-settings.cover-image.upload-button":"Upload Cover Image","post-settings.cover-image.change-button":"Change Cover Image","post-settings.cover-image.toggle-label":"Display Cover Image","post-settings.cover-image.toggle-tooltip":"Choose whether to show or hide your post's cover image. If hidden, people will still see it when the post is shared on social media.","post-social-actions.preview-mode-tooltip":"You're in preview mode. To share posts, head to your live site.","post-stats.view-count_plural":"{{count, number}} views","post.update-date":"Updated: {{date}}","private-profile-actions.create-post":"Create a Post","private-profile-actions.logout":"Logout","private-profile-actions.my-drafts":"My Drafts","private-profile-actions.profile-page":"My Profile","private-profile-actions.settings":"Settings","profile-blog-comments.blog-comments":"Blog Comments","profile-blog-drafts.blog-drafts":"Blog Drafts","profile-blog-likes.blog-likes":"Blog Likes","profile-blog-posts.blog-posts":"Blog Posts","profile-form.contact-support-link":"Learn how","profile-form.username-too-short":"Username is too short","profile-list-item.follower-count_plural":"{{count, number}} followers","profile-list-item.follower-count":"{{count, number}} follower","profile-list-item.posts-count_plural":"{{count, number}} posts","profile-list-item.posts-count":"{{count, number}} post","profile-menu-item.comments-count":"{{count, number}}","profile-menu-item.comments-label":"Blog Comments","profile-menu-item.drafts-count":"{{count, number}}","profile-menu-item.drafts-label":"Blog Drafts","profile-menu-item.likes-count":"{{count, number}}","profile-menu-item.likes-label":"Blog Likes","profile-menu-item.posts-count":"{{count, number}}","profile-menu-item.posts-label":"Blog Posts","profile-menu.notifications":"Notifications","profile-page.edit-profile":"Edit Profile","profile-stats.follower-count-label_plural":"followers","profile-stats.follower-count-label":"follower","profile-stats.follower-count":"{{count, number}}","profile-stats.following-count-label":"following","profile-stats.following-count":"{{count, number}}","profile-stats.posts-count-label_plural":"posts","profile-stats.posts-count-label":"post","profile-stats.posts-count":"{{count, number}}","profile.cancel":"Cancel","profile.confirm":"Confirm","profile.joined":"Joined: {{date, timeRelative}}","promote-writer-modal.add-new-posts":"Add posts to this blog","promote-writer-modal.cancel":"Cancel","promote-writer-modal.confirm":"Set as Writer","promote-writer-modal.get-more-content":"Adding writers to your blog is a great way get more fresh content and grow your community.","promote-writer-modal.manage-own-posts-comments":"Manage their post comments","promote-writer-modal.manage-own-posts":"Manage their own posts","promote-writer-modal.title":"Make This Member a Writer","promote-writer-modal.what-they-can-do":"Here’s what writers can do:","provision-page.add-from-editor":"Great, you've added this app to your Wix Dashboard. Now add it to your site from the Editor.","provision-page.get-blog":"Get Your Blog","provision-page.go-to-editor":"Go to Editor","provision-page.open-editor":"Open the Editor to add the blog to your site.","public-profile-actions.block-member":"Block Member","public-profile-actions.demote-writer":"Remove Writer","public-profile-actions.promote-writer":"Set as Writer","public-profile-actions.report-member":"Report member","public-profile-actions.unblock-member":"Unblock member","publish-button.publish":"Publish","recent-posts.all-posts-link":"See All","recent-posts.title":"Recent Posts","report-abuse-form.cancel-button":"Cancel","report-abuse-form.offensive-content":"Offensive Content","report-abuse-form.offensive-media":"Offensive Media","report-abuse-form.spam":"Spam","report-abuse-form.submit-button":"Report","report-comment-modal.help-us-understand":"Help us understand what is wrong with this comment","report-comment-modal.report-comment":"Report Comment","report-member-modal.help-us-understand":"Help us understand what is wrong with this member","report-member-modal.report-member":"Report Member","report-post-modal.help-us-understand":"Help us understand what is wrong with this post.","report-post-modal.report-post":"Report Post","restriction.content":"This category is members only, sign up to join in.","restriction.title":"Join the discussion","search-button.search":"Search","search-input.placeholder":"Search","search-menu.members":"Members","search-menu.posts":"Posts","search-page.no-results-content":"Search for posts and comments here.","search-page.no-results-title":"Looking for Something?","server-error-page.text":"This page isn't loading right now but we're working on a fix. Try refreshing the page or check back soon.","server-error-page.title":"This Page is Currently Unavailable","server-error-page.try-again-button":"Try Again","share-button.via-facebook":"Share via Facebook","share-button.via-google-plus":"Share via Google Plus","share-button.via-link":"Share via link","share-button.via-twitter":"Share via Twitter","share-comment-modal.share-comment":"Share Comment","share-form.share-link":"Share Link","share-link.cancel":"Cancel","share-link.copy":"Copy Link","share-post-modal.share-post":"Share Post","text-editor-control-group.blockquote":"Quote","text-editor-control-group.bold":"Bold","text-editor-control-group.header-one":"Title","text-editor-control-group.header-two":"Title","text-editor-control-group.header":"Title","text-editor-control-group.italic":"Italic","text-editor-control-group.link":"Link","text-editor-control-group.ordered-list-item":"Numbering","text-editor-control-group.unordered-list-item":"Bullets","text-editor-link-form.button":"Submit","text-editor-link-form.cancel-button":"Cancel","text-editor-link-form.placeholder":"e.g. www.wix.com","text-editor-link-form.title":"Add a link","text-editor-upload-button.tooltip":"Upload","text-editor-video-embed-button.tooltip":"Add a Video","text-editor-video-embed-form.add-video":"Add a video from YouTube or Vimeo","text-editor-video-embed-form.button":"Add Now","text-editor-video-embed-form.cancel-button":"Cancel","text-editor-video-embed-form.invalid-url":"Invalid URL. Try Again.","text-editor-video-embed-form.placeholder":"e.g. https:\u002F\u002Fyoutu.be\u002F6sx-xGiFIjk","text-editor.comment-placeholder":"Write a comment...","text-editor.enter-content-editor-mac":"Text editor shortcuts: bold Command+B, italic Command+I, link Command+K, title Command+Shift+1, subtitle Command+Shift+2, align left Command+L, align right Command+R, center Command+E, justify Command+J, numbering Command+Shift+M, bullets Command+Shift+L, code block Command+Shift+8, blockquote Command+Shift+9","text-editor.enter-content-editor-without-codeblock-mac":"Text editor shortcuts: bold Command+B, italic Command+I, link Command+K, title Command+Shift+1, subtitle Command+Shift+2, align left Command+L, align right Command+R, center Command+E, justify Command+J, numbering Command+Shift+M, bullets Command+Shift+L, blockquote Command+Shift+9","text-editor.enter-content-editor-without-codeblock":"Text editor shortcuts: bold Control+B, italic Control+I, link Control+K, title Control+Shift+1, subtitle Control+Shift+2, align left Control+L, align right Control+R, center Control+E, justify Control+J, numbering Control+Shift+M, bullets Control+Shift+L, blockquote Control+Shift+9","text-editor.enter-content-editor":"Text editor shortcuts: bold Control+B, italic Control+I, link Control+K, title Control+Shift+1, subtitle Control+Shift+2, align left Control+L, align right Control+R, center Control+E, justify Control+J, numbering Control+Shift+M, bullets Control+Shift+L, code block Control+Shift+8, blockquote Control+Shift+9","text-editor.placeholder":"Your great post begins here. Add images and videos to bring your posts to life and hashtags (e.g., #new, #followme) to reach more people.","text-editor.tooltip-align-left":"Align Left","text-editor.tooltip-align-right":"Align Right","text-editor.tooltip-align-text-center":"Center","text-editor.tooltip-align-text-justify":"Justify","text-editor.tooltip-align-text-left":"Align Left","text-editor.tooltip-align-text-right":"Align Right","text-editor.tooltip-blockquote":"Quote","text-editor.tooltip-bold":"Bold","text-editor.tooltip-change":"Change","text-editor.tooltip-code-block":"Code Block","text-editor.tooltip-delete":"Delete","text-editor.tooltip-fit-to-page":"Best Fit","text-editor.tooltip-full-width":"Full Width","text-editor.tooltip-header-one":"Title","text-editor.tooltip-header-two":"Subtitle","text-editor.tooltip-header":"Title","text-editor.tooltip-image-upload":"Add an Image","text-editor.tooltip-italic":"Italic","text-editor.tooltip-link":"Link","text-editor.tooltip-ordered-list-item":"Numbering","text-editor.tooltip-original-size":"Original Size","text-editor.tooltip-small-center":"Small","text-editor.tooltip-unordered-list-item":"Bullets","text-editor.tooltip-video":"Add a Video","time-relative":"{{time, timeRelative}}","time-to-read.label":"{{minutes}} min read","time-to-read.short-label":"{{minutes}} min","typing-list-loader.typing":"Typing...","typing-list.is-typing_plural":"{{count}} members are typing...","typing-list.is-typing":"{{member}} is typing...","unblock-member-modal.are-you-sure":"Are you sure you want to unblock this user?","unblock-member-modal.confirm":"Unblock","unblock-member-modal.unblock-user":"Unblock User","unpublished-changes-badge.label":"UNPUBLISHED CHANGES","video-embed.disabled-tooltip":"To play this video, view this post from your live site.","video-embed.load-video":"Load video","view-count.label_plural":"{{count, number}} views","view-count.label":"{{count, number}} view","widget-sign-up-button":"Login \u002F Sign up","write-comment.write-a-comment":"Write a comment","one-app.create-post-page-title":"Create post","one-app.edit-post-page-title":"Edit post","one-app.categories-modal-title":"Categories","one-app.post-editor-modal-right-button":"Next","one-app.categories-modal-right-button":"Save","one-app.post-page-title":"Post","one-app.post-editor-placeholder":"This is the beginning of a great post…"},"lang":"en"};
+      window.__STATICS_VERSION__ = '1.759.0';
+      window.__WS_CONFIG__ = {"url":"https:\u002F\u002Fforums.wix.com\u002Fwix-ws-server","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbnN0YW5jZUlkIjoiYzlkMTM0MjctZTZlOC00MWE3LWFlYWItYjNkM2M4OTAyNjc1IiwiYXBpS2V5IjoiNTQ3NmQ5MjMtYWVmMy00NjMxLWFhM2ItODg4NjBmYmUxYjg4IiwiY2hhbm5lbHMiOlt7Im1hc2siOiJpbnN0YW5jZS1jOWQxMzQyNy1lNmU4LTQxYTctYWVhYi1iM2QzYzg5MDI2NzUvYmxvZyIsInJlcXVpcmVzQXV0aCI6bnVsbCwicmVjZWl2ZU93bk1lc3NhZ2VzIjpmYWxzZX0seyJtYXNrIjoiaW5zdGFuY2UtYzlkMTM0MjctZTZlOC00MWE3LWFlYWItYjNkM2M4OTAyNjc1L2NhdGVnb3J5LShcXHcpIiwicmVxdWlyZXNBdXRoIjpudWxsLCJyZWNlaXZlT3duTWVzc2FnZXMiOmZhbHNlfSx7Im1hc2siOiJpbnN0YW5jZS1jOWQxMzQyNy1lNmU4LTQxYTctYWVhYi1iM2QzYzg5MDI2NzUvcG9zdC0oXFx3KSIsInJlcXVpcmVzQXV0aCI6bnVsbCwicmVjZWl2ZU93bk1lc3NhZ2VzIjpmYWxzZX1dLCJwcmVzZW5jZURhdGEiOnsibmFtZSI6ImFub255bW91cyJ9LCJpYXQiOjE1NDQ3NTY3MDB9.6yxVXP6P5vXiGKuM44Y3eBJL7dWZxy7HETQ8NuidOGA","communityToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbnN0YW5jZUlkIjoiYzlkMTM0MjctZTZlOC00MWE3LWFlYWItYjNkM2M4OTAyNjc1IiwiYXBpS2V5IjoiYzhmZWZlZDctNjVmNi00Mzc4LWJiZDQtMjAzZTI1NmUzNmIwIiwiY2hhbm5lbHMiOlt7Im1hc2siOiJjb21tdW5pdHktdW5kZWZpbmVkIiwicmVxdWlyZXNBdXRoIjpudWxsLCJyZWNlaXZlT3duTWVzc2FnZXMiOmZhbHNlfV0sInByZXNlbmNlRGF0YSI6eyJuYW1lIjoiYW5vbnltb3VzIn0sImlhdCI6MTU0NDc1NjcwMH0.w4RTEWUTBvNHt2_7XkxIPyc5qvXx9GJ0OId6cB42wIM"};
+      window.__LOCALE__ = "en";
+      window.__BASE_PATH__ = 'https://social-blog.wix.com';
+      window.__API_BASE_URL__ = 'https://apps.wix.com/_api/communities-blog-node-api';
+      window.__CLIENT_BASE_PATH__ = '';
+      window.__IS_DEV_MODE__ = false;
+    </script>
+  
+  
+
+
+</body></html>
